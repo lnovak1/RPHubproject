@@ -13,7 +13,7 @@ function Menu(){
         </Link>
 
         <Button as={Link} className="ButtonLink" to="/cadastro/video">
-            teste do botao
+            Divulgar Mesa
         </Button>
     </nav>
     );
