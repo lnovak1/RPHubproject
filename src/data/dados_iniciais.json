@@ -1,12 +1,12 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
-      "link": "https://www.alura.com.br/formacao-front-end",
-      "cor": "#6BD1FF",
+      "titulo": "Rola o dado",
+      "link": "/",
+      "cor": "#610000",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "",
+        "url": "/"
       },
       "videos": [
         {
@@ -14,33 +14,29 @@
           "url": "https://www.youtube.com/watch?v=uyXbORTwPg0"
         },
         {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "titulo": "Rola o dado Episódio 1 Parte 1 (RPG - D&D 3.5)",
+          "url": "https://www.youtube.com/watch?v=r_vt3of4ukw"
         },
         {
-          "titulo": "Componentização com VanillaJS #AluraMais",
-          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+          "titulo": "Rola o dado Episódio 1 Parte 2 (RPG - D&D 3.5)",
+          "url": "https://www.youtube.com/watch?v=Cfm4KS23QdY&t=169s"
         },
         {
-          "titulo": "Pare de chutar e aprenda a display: inline #01",
-          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+          "titulo": "Rola o dado Episódio 1 Parte 3 (RPG - D&D 3.5)",
+          "url": "https://www.youtube.com/watch?v=5duXuP3DJqo"
         },
         {
-          "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-          "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+          "titulo": "Rola o Dado - Episódio 2 - Parte 1 (RPG - D&D 3.5)",
+          "url": "https://www.youtube.com/watch?v=9NZM7dsf7wY"
         },
         {
-          "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+          "titulo": "Rola o Dado - Episódio 2 - Parte 2 (RPG - D&D 3.5)",
+          "url": "https://www.youtube.com/watch?v=PUUtp8mWOts"
         },
         {
-          "titulo": "Novidades do Angular v9",
-          "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
-        },
-        {
-          "titulo": "Base para aprender os frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
-        }        
+          "titulo": "Rola o Dado - Episódio 2 - Parte 3 (RPG - D&D 3.5)",
+          "url": "https://www.youtube.com/watch?v=4yIgzzkOZL8"
+        }       
       ]
     },
     {
