@@ -1,0 +1,16 @@
+{
+    "categorias" :[
+        {
+        "id": 1,
+        "nome": "Rola o Dado",
+        "Descrição": "Mestre-Azecos DD 3.5",
+        "cor": "#610000"
+        },
+        {
+            "id": 2,
+            "nome": "Mares de Sal e Sangue",
+            "Descrição": "Mestre-PredroK DD 5e",
+            "cor": "#DAA520"
+            }
+    ]
+}
