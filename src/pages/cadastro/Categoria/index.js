@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -11,24 +12,16 @@ function CadastroCategoria() {
     Descrição: '',
     cor: '',
   };
+
+  const { handleChange, values, clearForm } = useForm(valoresIniciais);
+
   const [Categorias, setCategorias] = useState([]);
-  const [values, setValues] = useState(valoresIniciais);
-
-  function setValue(chave, valor) {
-    setValues({
-      ...values,
-      [chave]: valor,
-    });
-  }
-
-  function handleChange(infosDoEvento) {
-    const { name, value } = infosDoEvento.target;
-    setValue(name, value);
-  }
 
   useEffect(() => {
     if (window.location.href.includes('localhost')) {
-      const URL = 'http://localhost:8080/categorias';
+      const URL = window.location.hostname.includes('localhost')
+        ? 'http://localhost:8080/categorias'
+        : 'https://rp-hub.herokuapp.com/categorias';
       fetch(URL)
         .then(async (respostaDoServer) => {
           if (respostaDoServer.ok) {
@@ -54,7 +47,7 @@ function CadastroCategoria() {
           ...Categorias,
           values,
         ]);
-        setValues(valoresIniciais);
+        clearForm(valoresIniciais);
       }}
       >
         <FormField
@@ -83,10 +76,15 @@ function CadastroCategoria() {
           Cadastrar
         </Button>
       </form>
+      {Categorias.length === 0 && (
+      <div>
+        Loading....
+      </div>
+      )}
       <ul>
         {Categorias.map((categoria) => (
-          <li key={`${categoria.nome}`}>
-            {categoria.nome}
+          <li key={`${categoria.titulo}`}>
+            {categoria.titulo}
           </li>
         ))}
       </ul>
