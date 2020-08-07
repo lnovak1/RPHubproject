@@ -7,21 +7,17 @@ import Home from './pages/home';
 import CadastroVideo from './pages/cadastro/video';
 import CadastroCategoria from './pages/cadastro/Categoria';
 
-
-const pagina404 = ()=>(<div>PAGINA 404</div>)
+const pagina404 = () => (<div>PAGINA 404</div>);
 
 ReactDOM.render(
-<BrowserRouter>
-  <Switch>
-    <Route path="/" component={Home} exact/>
-    <Route path="/cadastro/video" component={CadastroVideo}/>
-    <Route path="/cadastro/categoria" component={CadastroCategoria}/>
-    <Route component={pagina404}/>
-  </Switch>
-</BrowserRouter>,
+  <BrowserRouter>
+    <Switch>
+      <Route path="/" component={Home} exact />
+      <Route path="/cadastro/video" component={CadastroVideo} />
+      <Route path="/cadastro/categoria" component={CadastroCategoria} />
+      <Route component={pagina404} />
+    </Switch>
+  </BrowserRouter>,
 
-
-  document.getElementById('root')
+  document.getElementById('root'),
 );
-
-
